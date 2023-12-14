@@ -11,7 +11,7 @@ menu = [{'title': "О сайте", 'url_name': 'about'},
 
 
 def index(request):
-    posts = Cars.objects.all()
+    posts = Cars.objects.all() # Выбераем все атрибуты
     cats = Category.objects.all()
 
     context = {
